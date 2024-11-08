@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  font: 1rem monospace;
+  background: black;
+  color: white;
+}
+
+[hidden] {
+  display: none;
+  visibility: hidden;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+#radar-scope {
+  flex: 1;
+}
+
+#sidebar {
+  flex: 0 0 300px;
+  display: flex;
+  flex-flow: column;
+  place-items: stretch;
+  text-align: center;
+  padding: 10px;
+  background: #222;
+
+  > div:first-child {
+    border-bottom: 1px solid;
+    font-size: 1.3rem;
+  }
+
+  #command-log-text {
+    flex: 1;
+    background: inherit;
+    color: lightgreen;
+    border: none;
+    resize: none;
+  }
+}
+
+#main-menu {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  background: #222d;
+
+  > div:first-child {
+    width: 500px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    padding: 50px;
+    background: black;
+    border: 1px solid;
+    outline: 10px solid black;
+
+    > button {
+      padding: 10px;
+      font: inherit;
+    }
+  }
+}

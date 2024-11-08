@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B.V.R</title>
+  </head>
+  <body>
+    <div id="radar-scope"></div>
+    <div id="sidebar">
+      <div>
+        <span>Score:</span>
+        <span id="score">0</span>
+      </div>
+      <div>Command Log</div>
+      <textarea id="command-log-text" readonly></textarea>
+    </div>
+    <div id="main-menu">
+      <div>
+        <h1 id="main-menu-title">Main Menu</h1>
+        <p id="main-menu-message"></p>
+        <button id="main-menu-start" onclick="startGame()">Start</button>
+        <button id="main-menu-resume" onclick="resumeGame()" hidden>Resume</button>
+        <button id="main-menu-restart" onclick="restartGame()" hidden>Restart</button>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
